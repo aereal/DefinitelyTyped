@@ -167,5 +167,5 @@ import Vue = vuejs.Vue;
 
 declare module "vue" {
     import vue = vuejs.Vue;
-    export = vue;
+    export default vue;
 }
