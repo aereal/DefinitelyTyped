@@ -3,7 +3,7 @@
 // Definitions by: Bret Little <https://github.com/blittle>, VILIC VANE <http://vilic.info>, Wayne Maurer <https://github.com/wmaurer>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-interface Cheerio {
+declare interface Cheerio {
     // Document References
     // Cheerio https://github.com/cheeriojs/cheerio
     // JQuery http://api.jquery.com
@@ -193,7 +193,7 @@ interface Cheerio {
     toArray(): CheerioElement[];
 }
 
-interface CheerioOptionsInterface {
+declare interface CheerioOptionsInterface {
     // Document References
     // Cheerio https://github.com/cheeriojs/cheerio
     // HTMLParser2 https://github.com/fb55/htmlparser2/wiki/Parser-options
@@ -208,7 +208,7 @@ interface CheerioOptionsInterface {
     normalizeWhitespace?: boolean;
 }
 
-interface CheerioSelector {
+declare interface CheerioSelector {
     (selector: string): Cheerio;
     (selector: string, context: string): Cheerio;
     (selector: string, context: CheerioElement): Cheerio;
@@ -221,7 +221,7 @@ interface CheerioSelector {
     (selector: any): Cheerio;
 }
 
-interface CheerioStatic extends CheerioSelector {
+declare interface CheerioStatic extends CheerioSelector {
     // Document References
     // Cheerio https://github.com/cheeriojs/cheerio
     // JQuery http://api.jquery.com
@@ -236,7 +236,7 @@ interface CheerioStatic extends CheerioSelector {
     html(element: CheerioElement, options?: CheerioOptionsInterface): string;
 }
 
-interface CheerioElement {
+declare interface CheerioElement {
     // Document References
     // Node Console
     tagName: string;
@@ -255,7 +255,7 @@ interface CheerioElement {
     nodeValue: string;
 }
 
-interface CheerioAPI extends CheerioSelector {
+declare interface CheerioAPI extends CheerioSelector {
   load(html: string, options?: CheerioOptionsInterface): CheerioStatic;
 }
 
